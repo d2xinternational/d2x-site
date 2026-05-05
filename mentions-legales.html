@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Mentions légales du site D2X International — informations sur l'éditeur, l'hébergeur, la propriété intellectuelle et les données personnelles." />
+<meta name="author" content="D2X International" />
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://www.d2x.fr/mentions-legales" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<title>Mentions légales — D2X International</title>
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="D2X International" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:url" content="https://www.d2x.fr/mentions-legales" />
+<meta property="og:title" content="Mentions légales — D2X International" />
+<meta property="og:description" content="Mentions légales du site D2X International." />
+<meta property="og:image" content="https://www.d2x.fr/assets/og/og-default.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet" />
+<style>
+/* D2X International — Design system */
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f5f7fb;
+  --bg-dark: #0a1628;
+  --ink: #0a1628;
+  --ink-soft: #3d4a5c;
+  --muted: #6b7a90;
+  --line: #e3e8ef;
+  --line-soft: #eef1f6;
+  --blue: #1c75bc;
+  --blue-deep: #0e4f85;
+  --blue-soft: #e3f0fa;
+  --yellow: #f9b233;
+  --accent: #00b8a9;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-lg: 24px;
+  --container: 1280px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'ss01', 'cv11';
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+h1 { font-size: clamp(2.5rem, 5vw + 1rem, 5rem); font-weight: 500; letter-spacing: -0.035em; }
+h2 { font-size: clamp(1.875rem, 3vw + 0.5rem, 3rem); font-weight: 500; letter-spacing: -0.03em; }
+h3 { font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem); font-weight: 600; }
+h4 { font-size: 1.125rem; font-weight: 600; }
+
+p { color: var(--ink-soft); }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--blue);
+  margin-bottom: 24px;
+}
+.eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: currentColor;
+}
+
+.lead {
+  font-size: clamp(1.125rem, 1vw + 0.875rem, 1.375rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 58ch;
+}
+
+
+.nav__logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.footer__logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  margin-bottom: 20px;
+}
+
+/* Ghost button used on dark backgrounds (e.g. CTA, footer) — keeps white text on hover */
+.btn--ghost-light {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.btn--ghost-light:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav__logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav__logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+}
+.nav__logo-sub {
+  font-size: 0.6875rem;
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav__links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+.nav__links a {
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  border-radius: 8px;
+  transition: all 0.2s var(--ease);
+}
+.nav__links a:hover { color: var(--ink); background: var(--bg-soft); }
+.nav__links a.is-active { color: var(--ink); }
+.nav__links a.is-active::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 50%;
+  margin: 4px auto 0;
+}
+
+.nav__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s var(--ease);
+}
+.nav__cta:hover { background: var(--blue); transform: translateY(-1px); }
+
+.nav__burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.nav__burger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--ink);
+  position: relative;
+}
+.nav__burger span::before,
+.nav__burger span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--ink);
+}
+.nav__burger span::before { top: -6px; }
+.nav__burger span::after { top: 6px; }
+
+@media (max-width: 960px) {
+  .nav__links, .nav__cta { display: none; }
+  .nav__burger { display: inline-flex; }
+  .nav.is-open .nav__mobile { display: flex; }
+}
+
+.nav__mobile {
+  display: none;
+  flex-direction: column;
+  padding: 12px 24px 24px;
+  border-top: 1px solid var(--line-soft);
+  gap: 2px;
+}
+.nav__mobile a {
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--line-soft);
+}
+.nav__mobile a:last-child { border-bottom: none; }
+
+/* Sections */
+section { padding: 96px 0; }
+@media (max-width: 768px) { section { padding: 64px 0; } }
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+.section-header__text { max-width: 640px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: all 0.2s var(--ease);
+  white-space: nowrap;
+}
+.btn--primary { background: var(--ink); color: #fff; }
+.btn--primary:hover { background: var(--blue); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(28, 117, 188, 0.3); }
+.btn--ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.btn--ghost:hover { background: var(--bg-soft); border-color: var(--ink); }
+.btn--blue { background: var(--blue); color: #fff; }
+.btn--blue:hover { background: var(--blue-deep); }
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.25s var(--ease);
+}
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 96px 0 120px;
+  overflow: hidden;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.hero__title {
+  font-size: clamp(2.75rem, 5.5vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.hero__title em {
+  font-style: normal;
+  color: var(--blue);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.hero__desc {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 54ch;
+  margin-bottom: 40px;
+}
+.hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.hero__side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero__stat {
+  padding: 28px;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  border: 1px solid var(--line-soft);
+}
+.hero__stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.hero__stat-num sup { font-size: 0.5em; color: var(--blue); margin-left: 4px; }
+.hero__stat-label { font-size: 0.9375rem; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .hero__grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero { padding: 48px 0 80px; }
+}
+
+/* Grid / cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) { .grid--4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .grid--2, .grid--4 { grid-template-columns: 1fr; } }
+
+.card {
+  position: relative;
+  padding: 32px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: all 0.3s var(--ease);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--ink);
+  box-shadow: 0 20px 50px rgba(10, 22, 40, 0.08);
+}
+.card__num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+.card__title { font-size: 1.25rem; font-weight: 600; }
+.card__desc { font-size: 0.9375rem; color: var(--ink-soft); line-height: 1.55; }
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.card--mission { padding: 40px 32px; }
+.card--mission .card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+/* Stats band */
+.stats {
+  padding: 64px 0;
+  background: var(--bg-dark);
+  color: #fff;
+}
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.stats__item { }
+.stats__num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.stats__num sup { font-size: 0.5em; color: #7aa3ff; }
+.stats__label {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 768px) { .stats__grid { grid-template-columns: repeat(2, 1fr); gap: 32px; } }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: var(--line);
+}
+.timeline__item {
+  position: relative;
+  padding-bottom: 48px;
+}
+.timeline__item:last-child { padding-bottom: 0; }
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 13px;
+  height: 13px;
+  background: var(--bg);
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+}
+.timeline__year {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--blue);
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.timeline__title { font-size: 1.125rem; font-weight: 600; margin-bottom: 6px; }
+.timeline__desc { font-size: 0.9375rem; color: var(--ink-soft); }
+
+/* Reference card */
+.ref-card {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all 0.3s var(--ease);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ref-card:hover { border-color: var(--ink); transform: translateY(-3px); box-shadow: 0 16px 40px rgba(10, 22, 40, 0.06); }
+.ref-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+.ref-card__loc {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+.ref-card__name { font-size: 1.25rem; font-weight: 600; line-height: 1.2; }
+.ref-card__budget {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 6px 10px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.ref-card__meta {
+  display: grid;
+  gap: 8px;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 16px;
+}
+.ref-card__meta-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  font-size: 0.8125rem;
+  gap: 12px;
+}
+.ref-card__meta-key { color: var(--muted); }
+.ref-card__meta-val { color: var(--ink); font-weight: 500; }
+.ref-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.ref-card__tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  background: var(--bg-soft);
+  color: var(--ink-soft);
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Category chips / tabs */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.chip {
+  padding: 10px 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* Team grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.team-card {
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: all 0.3s var(--ease);
+  border: 1px solid transparent;
+}
+.team-card:hover { background: var(--bg); border-color: var(--line); transform: translateY(-3px); }
+.team-card__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+  letter-spacing: 0;
+}
+.team-card__name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+.team-card__role {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+/* Mission detail blocks */
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  padding: 80px 0;
+  border-top: 1px solid var(--line);
+}
+.mission:first-of-type { border-top: none; }
+.mission__aside {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+.mission__num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--blue);
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+.mission__title { font-size: clamp(1.75rem, 2.5vw, 2.5rem); margin-bottom: 20px; }
+.mission__kicker { font-size: 1rem; color: var(--ink-soft); max-width: 40ch; }
+
+.mission__blocks { display: grid; gap: 32px; }
+.mission__block h3 {
+  font-size: 1.125rem;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.mission__block h3::before {
+  content: counter(block-counter, decimal-leading-zero);
+  counter-increment: block-counter;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  color: var(--blue);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+.mission__blocks { counter-reset: block-counter; }
+.mission__block ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.mission__block li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.mission__block li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 14px;
+  height: 1px;
+  background: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .mission { grid-template-columns: 1fr; gap: 40px; padding: 56px 0; }
+  .mission__aside { position: static; }
+}
+
+/* CTA band */
+.cta {
+  padding: 96px 0;
+}
+.cta__box {
+  background: var(--bg-dark);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 80px 64px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.cta__box::before {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(28, 117, 188, 0.35), transparent 70%);
+  pointer-events: none;
+}
+.cta h2 { color: #fff; font-size: clamp(2rem, 3vw, 3rem); margin-bottom: 20px; }
+.cta p { color: rgba(255, 255, 255, 0.7); font-size: 1.0625rem; max-width: 48ch; }
+.cta .btn--primary { background: #fff; color: var(--ink); position: relative; z-index: 1; }
+.cta .btn--primary:hover { background: var(--blue); color: #fff; }
+.cta__actions { display: flex; gap: 12px; flex-wrap: wrap; position: relative; z-index: 1; justify-self: end; }
+
+@media (max-width: 900px) {
+  .cta__box { grid-template-columns: 1fr; padding: 48px 32px; gap: 32px; }
+  .cta__actions { justify-self: start; }
+}
+
+/* Footer */
+.footer {
+  padding: 80px 0 40px;
+  background: var(--bg-dark);
+  color: #fff;
+}
+.footer a { color: rgba(255, 255, 255, 0.75); transition: color 0.2s var(--ease); }
+.footer a:hover { color: #fff; }
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 56px;
+}
+.footer h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+.footer ul { list-style: none; display: grid; gap: 10px; }
+.footer__logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.footer__tagline {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9375rem;
+  max-width: 32ch;
+  margin-bottom: 24px;
+}
+.footer__contact-line {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9375rem;
+  margin-bottom: 8px;
+}
+.footer__bottom {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 800px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .footer__grid { grid-template-columns: 1fr; } }
+
+/* Page header (for inner pages) */
+.page-header {
+  padding: 80px 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+.page-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: 24px;
+}
+.page-header p {
+  font-size: 1.125rem;
+  max-width: 60ch;
+  color: var(--ink-soft);
+}
+
+/* Two col content */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+}
+@media (max-width: 900px) { .two-col { grid-template-columns: 1fr; gap: 32px; } }
+
+/* Value cards */
+.value {
+  padding: 40px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.value__icon {
+  width: 44px;
+  height: 44px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.value h3 { margin-bottom: 12px; }
+.value p { margin-bottom: 16px; }
+.value ul { list-style: none; display: grid; gap: 8px; }
+.value li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+.value li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* Form */
+.form {
+  display: grid;
+  gap: 20px;
+  max-width: 560px;
+}
+.form label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  transition: all 0.2s var(--ease);
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(28, 117, 188, 0.12);
+}
+.form textarea { resize: vertical; min-height: 140px; }
+
+/* Contact info card */
+.contact-card {
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: grid;
+  gap: 24px;
+}
+.contact-card__item {
+  display: grid;
+  gap: 4px;
+}
+.contact-card__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: 500;
+}
+.contact-card__value { font-size: 1.0625rem; font-weight: 500; color: var(--ink); }
+
+/* Utility */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reveal animation */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: reveal 0.8s var(--ease) forwards;
+  }
+  .reveal[data-delay="1"] { animation-delay: 0.1s; }
+  .reveal[data-delay="2"] { animation-delay: 0.2s; }
+  .reveal[data-delay="3"] { animation-delay: 0.3s; }
+  .reveal[data-delay="4"] { animation-delay: 0.4s; }
+}
+@keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+
+</style>
+<style>
+  .legal { max-width: 760px; margin: 0 auto; }
+  .legal h2 {
+    font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+    font-weight: 600;
+    margin-top: 48px;
+    margin-bottom: 12px;
+  }
+  .legal h2:first-of-type { margin-top: 0; }
+  .legal p, .legal ul {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .legal ul { list-style: none; padding-left: 0; }
+  .legal ul li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+  .legal ul li::before { content: '—'; position: absolute; left: 0; color: var(--blue); }
+  .legal a { color: var(--blue); text-decoration: underline; }
+  .legal a:hover { color: var(--blue-deep); }
+  .legal__meta {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 12px 24px;
+    padding: 24px;
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+  }
+  .legal__meta dt { font-size: 0.8125rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .legal__meta dd { font-size: 0.9375rem; color: var(--ink); font-weight: 500; }
+  @media (max-width: 600px) { .legal__meta { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="D2X International — accueil">
+      <img src="assets/logo.png" alt="D2X International" class="nav__logo-img" />
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="missions.html">Nos missions</a></li>
+        <li><a href="references.html">Références</a></li>
+        <li><a href="equipe.html">Équipe</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://www.rencontresd2x.com/" target="_blank" rel="noopener" class="nav__cta">Rencontres pro <span class="arrow">↗</span></a>
+    <button class="nav__burger" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('is-open')"><span></span></button>
+  </div>
+  <div class="nav__mobile">
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="missions.html">Nos missions</a>
+    <a href="references.html">Références</a>
+    <a href="equipe.html">Équipe</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.rencontresd2x.com/" target="_blank" rel="noopener">Les Rencontres Professionnelles ↗</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Informations légales</span>
+      <h1>Mentions légales</h1>
+      <p>Conformément aux dispositions des articles 6-III et 19 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, dite L.C.E.N.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:64px;">
+    <div class="container">
+      <article class="legal">
+
+        <h2>Définitions</h2>
+        <p><strong>Client</strong> : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.</p>
+        <p><strong>Contenu</strong> : ensemble des éléments constituant l'information présente sur le Site, notamment textes, images, vidéos.</p>
+        <p><strong>Informations clients</strong> : ci-après dénommées « Information(s) », qui correspondent à l'ensemble des données personnelles susceptibles d'être détenues par D2X International pour la gestion de votre compte, de la gestion de la relation client et à des fins d'analyses et de statistiques.</p>
+        <p><strong>Utilisateur</strong> : internaute se connectant et utilisant le site susnommé.</p>
+        <p><strong>Informations personnelles</strong> : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+        <p>Les termes « données à caractère personnel », « personne concernée », « sous-traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
+
+        <h2>1. Présentation du site internet</h2>
+        <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <a href="https://www.d2x.fr">www.d2x.fr</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+        <dl class="legal__meta">
+          <dt>Propriétaire</dt><dd>D2X International</dd>
+          <dt>Adresse</dt><dd>60 rue Saint André des Arts — 75006 Paris</dd>
+          <dt>Téléphone</dt><dd>01 42 94 02 00</dd>
+          <dt>Email</dt><dd><a href="mailto:d2x@d2x.fr">d2x@d2x.fr</a></dd>
+          <dt>Forme juridique</dt><dd>SARL au capital de 9 146,94 €</dd>
+          <dt>Directeur de la publication</dt><dd>TRUONG Van Yan</dd>
+          <dt>Hébergeur du site</dt><dd>WIX, Tel Aviv, Israël</dd>
+          <dt>SIRET</dt><dd>327 715 991 00060 — RC PARIS B</dd>
+          <dt>N° TVA</dt><dd>FR23327715991</dd>
+        </dl>
+
+        <h2>2. Conditions générales du site et des services proposés</h2>
+        <p>Le Site constitue une œuvre de l'esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.</p>
+        <p>L'utilisation du site <a href="https://www.d2x.fr">www.d2x.fr</a> implique l'acceptation pleine et entière des conditions générales d'utilisation ci-après décrites. Ces conditions d'utilisation sont susceptibles d'être modifiées ou complétées à tout moment, les utilisateurs du site sont donc invités à les consulter de manière régulière.</p>
+        <p>Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par D2X International. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s'imposent néanmoins à l'utilisateur qui est invité à s'y référer le plus souvent possible afin d'en prendre connaissance.</p>
+
+        <h2>3. Description des services fournis</h2>
+        <p>Le site internet <a href="https://www.d2x.fr">www.d2x.fr</a> a pour objet de fournir une information concernant l'ensemble des activités de la société. D2X International s'efforce de fournir sur le site des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.</p>
+        <p>Toutes les informations indiquées sur le site sont données à titre indicatif et sont susceptibles d'évoluer. Par ailleurs, les renseignements figurant sur le site ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p>
+
+        <h2>4. Limitations contractuelles sur les données techniques</h2>
+        <p>Le site utilise la technologie JavaScript. Le site internet ne pourra être tenu responsable de dommages matériels liés à l'utilisation du site. De plus, l'utilisateur du site s'engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis à jour. Le site <a href="https://www.d2x.fr">www.d2x.fr</a> est hébergé chez un prestataire sur le territoire de l'Union Européenne conformément aux dispositions du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
+        <p>L'objectif est d'apporter une prestation qui assure le meilleur taux d'accessibilité. L'hébergeur assure la continuité de son service 24 heures sur 24, tous les jours de l'année. Il se réserve néanmoins la possibilité d'interrompre le service d'hébergement pour les durées les plus courtes possibles, notamment à des fins de maintenance, d'amélioration de ses infrastructures, de défaillance de ses infrastructures ou si les Prestations et Services génèrent un trafic réputé anormal.</p>
+        <p>D2X International et l'hébergeur ne pourront être tenus responsables en cas de dysfonctionnement du réseau Internet, des lignes téléphoniques ou du matériel informatique et de téléphonie lié notamment à l'encombrement du réseau empêchant l'accès au serveur.</p>
+
+        <h2>5. Propriété intellectuelle et contrefaçon</h2>
+        <p>D2X International est propriétaire des droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de D2X International.</p>
+        <p>Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+
+        <h2>6. Limitations de responsabilité</h2>
+        <p>D2X International ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site internet <a href="https://www.d2x.fr">www.d2x.fr</a>, et résultant soit de l'utilisation d'un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l'apparition d'un bug ou d'une incompatibilité.</p>
+        <p>D2X International ne pourra également être tenu responsable des dommages indirects (tels par exemple qu'une perte de marché ou perte d'une chance) consécutifs à l'utilisation du site.</p>
+        <p>Des espaces interactifs (possibilité de poser des questions dans l'espace contact) sont à la disposition des utilisateurs. D2X International se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, D2X se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l'utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant ou pornographique, quel que soit le support utilisé (texte, photographie…).</p>
+
+        <h2>7. Gestion des données personnelles</h2>
+        <p>Le Client est informé des réglementations concernant la communication marketing, la loi du 21 juin 2014 pour la confiance dans l'économie numérique, la loi Informatique et Libertés du 6 août 2004 ainsi que du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
+
+        <h3 style="font-size:1rem; margin-top:24px; margin-bottom:8px;">7.1 Responsables de la collecte des données personnelles</h3>
+        <p>Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l'Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est D2X International, représentée par Van Yan TRUONG, son représentant légal.</p>
+        <p>En tant que responsable du traitement des données qu'il collecte, D2X International s'engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment d'établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité. Chaque fois que D2X International traite des Données Personnelles, elle prend toutes les mesures raisonnables pour s'assurer de l'exactitude et de la pertinence des Données Personnelles au regard des finalités pour lesquelles elle les traite.</p>
+
+        <h3 style="font-size:1rem; margin-top:24px; margin-bottom:8px;">7.2 Finalité des données collectées</h3>
+        <p>D2X International est susceptible de traiter tout ou partie des données :</p>
+        <ul>
+          <li>pour permettre la navigation sur le Site et la gestion et la traçabilité des prestations et services commandés par l'utilisateur : données de connexion et d'utilisation du Site, facturation, historique des commandes, etc.</li>
+          <li>pour prévenir et lutter contre la fraude informatique (spamming, hacking…) : matériel informatique utilisé pour la navigation, l'adresse IP, le mot de passe (hashé)</li>
+          <li>pour améliorer la navigation sur le Site : données de connexion et d'utilisation</li>
+          <li>pour mener des campagnes de newsletters (sms, mail) : nom, prénom, numéro de téléphone, adresse email, société</li>
+        </ul>
+        <p>Les informations recueillies sur les formulaires sont enregistrées dans un fichier informatisé et sont conservées dans une limite de 3 ans.</p>
+        <p>D2X International ne commercialise pas vos données personnelles, qui sont donc uniquement utilisées par nécessité ou à des fins statistiques et d'analyses.</p>
+
+        <h3 style="font-size:1rem; margin-top:24px; margin-bottom:8px;">7.3 Droit d'accès, de rectification et d'opposition</h3>
+        <p>Conformément à la réglementation européenne en vigueur, les Utilisateurs de <a href="https://www.d2x.fr">www.d2x.fr</a> disposent des droits suivants :</p>
+        <ul>
+          <li>droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données</li>
+          <li>droit de verrouillage ou d'effacement des données à caractère personnel (article 17 RGPD), lorsqu'elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite</li>
+          <li>droit de retirer à tout moment un consentement (article 13-2c RGPD)</li>
+          <li>droit à la limitation du traitement des données (article 18 RGPD)</li>
+          <li>droit d'opposition au traitement des données (article 21 RGPD)</li>
+          <li>droit à la portabilité des données fournies, lorsque ces données font l'objet de traitements automatisés fondés sur le consentement ou sur un contrat (article 20 RGPD)</li>
+          <li>droit de définir le sort des données après le décès et de choisir à qui D2X International devra communiquer (ou non) ces données à un tiers préalablement désigné</li>
+        </ul>
+        <p>Dès que D2X International a connaissance du décès d'un Utilisateur et à défaut d'instructions de sa part, D2X International s'engage à détruire ses données, sauf si leur conservation s'avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.</p>
+        <p>Si l'Utilisateur souhaite savoir comment D2X International utilise ses Données Personnelles, demander à les rectifier ou s'oppose à leur traitement, l'Utilisateur peut contacter D2X International par écrit à l'adresse suivante :</p>
+        <p>D2X International, 60 rue Saint André des Arts, 75006 Paris</p>
+        <p>Dans ce cas, l'Utilisateur doit indiquer les Données Personnelles qu'il souhaiterait que D2X International corrige, mette à jour ou supprime, en s'identifiant précisément avec une copie d'une pièce d'identité (carte d'identité ou passeport).</p>
+        <p>Les demandes de suppression de Données Personnelles seront soumises aux obligations qui sont imposées à D2X International par la loi, notamment en matière de conservation ou d'archivage des documents. Enfin, les Utilisateurs de <a href="https://www.d2x.fr">www.d2x.fr</a> peuvent déposer une réclamation auprès des autorités de contrôle, et notamment de la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+        <p>Vous pouvez aussi modifier librement vos abonnements à nos communications en cliquant sur « Modifier mes préférences » en bas de chacune de nos communications envoyées par e-mail. Pour vous désabonner de toutes les communications de D2X International, vous devez cliquer sur le lien de désabonnement qui se situe en bas de nos e-mails.</p>
+
+        <h3 style="font-size:1rem; margin-top:24px; margin-bottom:8px;">7.4 Non-communication des données personnelles</h3>
+        <p>D2X International s'interdit de traiter, héberger ou transférer les Informations collectées sur ses Clients vers un pays situé en dehors de l'Union européenne ou reconnu comme « non adéquat » par la Commission européenne sans en informer préalablement le client. Pour autant, D2X International reste libre du choix de ses sous-traitants techniques et commerciaux à la condition qu'ils présentent les garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
+        <p>D2X International s'engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu'elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l'intégrité ou la confidentialité des Informations du Client est porté à la connaissance de D2X International, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs, D2X International ne collecte aucune « donnée sensible ».</p>
+        <p>Les Données Personnelles de l'Utilisateur peuvent être traitées par des filiales de D2X International et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique.</p>
+        <p>Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d'avoir accès aux données des Utilisateurs de <a href="https://www.d2x.fr">www.d2x.fr</a> sont principalement les agents de notre service client.</p>
+
+        <h2>8. Notification d'incident</h2>
+        <p>Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n'est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue. Si nous prenions connaissance d'une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d'incident tiennent compte de nos obligations légales, qu'elles se situent au niveau national ou européen.</p>
+        <p>Aucune information personnelle de l'utilisateur du site <a href="https://www.d2x.fr">www.d2x.fr</a> n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l'hypothèse du rachat de D2X International et de ses droits permettrait la transmission desdites informations à l'éventuel acquéreur, qui serait à son tour tenu de la même obligation de conservation et de modification des données vis-à-vis de l'utilisateur du site.</p>
+        <p>Pour assurer la sécurité et la confidentialité des Données Personnelles, D2X International utilise des réseaux protégés par des dispositifs standards tels que pare-feu, pseudonymisation, encryption et mot de passe.</p>
+        <p>Lors du traitement des Données Personnelles, D2X International prend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction.</p>
+
+        <h2>9. Liens hypertextes, « cookies » et balises (« tags ») internet</h2>
+        <p>Le site <a href="https://www.d2x.fr">www.d2x.fr</a> contient un certain nombre de liens hypertextes vers d'autres sites, mis en place avec l'autorisation de D2X International. Cependant, D2X International n'a pas la possibilité de vérifier le contenu des sites ainsi visités, et n'assumera en conséquence aucune responsabilité de ce fait.</p>
+        <p>Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies, et ce gratuitement, à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l'accessibilité à tout ou partie des Services proposés par le site.</p>
+
+        <h3 style="font-size:1rem; margin-top:24px; margin-bottom:8px;">9.1 « Cookies »</h3>
+        <p>Un « cookie » est un petit fichier d'information envoyé sur le navigateur de l'Utilisateur et enregistré au sein du terminal de l'Utilisateur (ex. : ordinateur, smartphone). Ce fichier comprend des informations telles que le nom de domaine de l'Utilisateur, le fournisseur d'accès Internet, le système d'exploitation, ainsi que la date et l'heure d'accès. Les Cookies ne risquent en aucun cas d'endommager le terminal de l'Utilisateur.</p>
+        <p>D2X International est susceptible de traiter les informations de l'Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à D2X International d'améliorer le contenu du Site et la navigation de l'Utilisateur :</p>
+        <p><strong>Cookies fonctionnels</strong> : ils permettent de vous reconnaître afin de vous proposer une expérience de navigation optimale. Ils sont nécessaires pour utiliser certains aspects de notre site. Ces cookies collectent des informations anonymes et ne peuvent pas tracer vos déplacements sur d'autres sites.</p>
+        <p><strong>Cookies analytiques</strong> : ils recueillent des informations concernant la façon dont vous utilisez notre site. Ils permettent d'établir des statistiques liées à l'utilisation de notre site Internet. Nous collectons ainsi les informations nécessaires à l'amélioration de votre expérience de navigation.</p>
+        <p>L'Utilisateur peut configurer son navigateur pour qu'il lui permette de décider s'il souhaite ou non accepter les Cookies, soit systématiquement, soit selon leur émetteur. L'Utilisateur peut également configurer son logiciel de navigation de manière à ce que l'acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu'un Cookie soit susceptible d'être enregistré dans son terminal. D2X International informe l'Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.</p>
+        <p>Si l'Utilisateur refuse l'enregistrement de Cookies dans son terminal ou son navigateur, ou si l'Utilisateur supprime ceux qui y sont enregistrés, l'Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. D2X International décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site résultant du refus de Cookies par l'Utilisateur.</p>
+        <p>En cliquant sur les icônes dédiées aux réseaux sociaux (Twitter, Facebook, LinkedIn) figurant sur le Site, et si l'Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation, ces réseaux peuvent également déposer des cookies sur les terminaux. À tout moment, l'Utilisateur peut revenir sur son consentement.</p>
+
+        <h3 style="font-size:1rem; margin-top:24px; margin-bottom:8px;">9.2 Balises (« tags ») internet</h3>
+        <p>D2X International peut employer occasionnellement des balises Internet (également appelées « tags », ou balises d'action, GIF à un pixel, GIF transparents, GIF invisibles et GIF un à un) et les déployer par l'intermédiaire d'un partenaire spécialiste d'analyses Web susceptible de se trouver (et donc de stocker les informations correspondantes, y compris l'adresse IP de l'Utilisateur) dans un pays étranger.</p>
+        <p>Ces balises sont placées à la fois dans les publicités en ligne permettant aux internautes d'accéder au Site, et sur les différentes pages de celui-ci. Cette technologie permet à D2X International d'évaluer les réponses des visiteurs face au Site et l'efficacité de ses actions (par exemple, le nombre de fois où une page est ouverte et les informations consultées), ainsi que l'utilisation de ce Site par l'Utilisateur.</p>
+        <p>Le prestataire externe pourra éventuellement recueillir des informations sur les visiteurs du Site et d'autres sites Internet grâce à ces balises, constituer des rapports sur l'activité du Site à l'attention de D2X International, et fournir d'autres services relatifs à l'utilisation de celui-ci et d'Internet.</p>
+
+        <h2>10. Droit applicable et attribution de juridiction</h2>
+        <p>Tout litige en relation avec l'utilisation du site <a href="https://www.d2x.fr">www.d2x.fr</a> est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Paris.</p>
+
+        <p style="margin-top:48px; font-size:0.8125rem; color:var(--muted);">Dernière mise à jour : avril 2026.</p>
+
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="assets/logo.png" alt="D2X International" class="footer__logo-img" />
+        <p class="footer__tagline">Le partenaire conseil des maîtres d'ouvrage depuis 1983.</p>
+        <a href="https://www.linkedin.com/company/d2x-international/" target="_blank" rel="noopener" class="btn btn--ghost-light" style="padding:10px 16px;">LinkedIn <span class="arrow">↗</span></a>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="missions.html">Nos missions</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="equipe.html">Notre équipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <span class="footer__contact-line">31 rue Ernest Renan</span>
+        <span class="footer__contact-line">92130 Issy-les-Moulineaux</span>
+        <span class="footer__contact-line" style="margin-top:12px; display:block;"><a href="tel:+33142940200">01 42 94 02 00</a></span>
+        <span class="footer__contact-line"><a href="mailto:commercial@d2x.fr">commercial@d2x.fr</a></span>
+      </div>
+      <div>
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="https://www.rencontresd2x.com/" target="_blank" rel="noopener">Rencontres pro ↗</a></li>
+          <li><a href="contact.html">Demander un devis</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 1983–2026 D2X International. Tous droits réservés.</span>
+      <span>Cabinet de conseil — Issy-les-Moulineaux</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
